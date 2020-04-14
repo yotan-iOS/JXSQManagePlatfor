@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleDemoViewController">
+            <connections>
+                <outlet property="downPtz" destination="twg-gK-i2d" id="UHQ-MV-0U3"/>
+                <outlet property="leftDownPtz" destination="YnT-bA-Yji" id="Bvv-rW-xn8"/>
+                <outlet property="leftUpPtz" destination="ePR-ox-5Yv" id="ugp-dc-YzX"/>
+                <outlet property="m_captureButton" destination="5ux-X5-XtP" id="Jw2-6C-fpP"/>
+                <outlet property="m_playButton" destination="whg-za-nzk" id="6NV-j8-G1g"/>
+                <outlet property="m_playView" destination="9" id="11"/>
+                <outlet property="m_ptzBegin" destination="knm-5e-ESs" id="EVw-bz-7Ye"/>
+                <outlet property="m_ptzButton" destination="07h-Nb-bZD" id="ekr-zs-PnV"/>
+                <outlet property="m_ptzCenter" destination="kte-Cd-av6" id="ELv-Q9-lWg"/>
+                <outlet property="m_ptzEnd" destination="55f-fL-97w" id="yBF-jF-GSL"/>
+                <outlet property="m_ptzRight" destination="ruJ-Uj-ANO" id="5i4-1q-S8P"/>
+                <outlet property="oneView" destination="g0K-s9-0zr" id="uS3-Uu-Byb"/>
+                <outlet property="rightDownPtz" destination="CD1-Rz-OL5" id="Yf6-Tz-sae"/>
+                <outlet property="rightUpPtz" destination="epS-0G-icq" id="GQy-r5-A02"/>
+                <outlet property="twoView" destination="hIS-5z-Cvv" id="0Qb-h0-fDt"/>
+                <outlet property="upPtz" destination="f3x-K3-iax" id="GQ9-k4-Dy1"/>
+                <outlet property="view" destination="6" id="10"/>
+                <outlet property="zoomOouPtz" destination="ngj-CY-y1i" id="Gbv-om-hyH"/>
+                <outlet property="zoominPtz" destination="VJU-2j-94Z" id="Jfb-z4-Cz7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="whg-za-nzk">
+                    <rect key="frame" x="101" y="104" width="118" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="playerBtnClicked:" destination="-1" eventType="touchUpInside" id="frc-Fq-wGS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.75" green="0.75" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-365" y="132"/>
+        </view>
+        <barButtonItem title="Item" id="61"/>
+        <view contentMode="scaleToFill" id="g0K-s9-0zr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5ux-X5-XtP">
+                    <rect key="frame" x="273" y="150" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="capture.png"/>
+                    <connections>
+                        <action selector="captureBtnClicked:" destination="-1" eventType="touchUpInside" id="gdo-qY-Kb0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="07h-Nb-bZD">
+                    <rect key="frame" x="34" y="86" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_left.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzBtnClicked:" destination="-1" eventType="touchDown" id="KQq-ji-ms3"/>
+                        <action selector="ptzBtnClickedUp:" destination="-1" eventType="touchUpInside" id="2G3-gp-6jW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kte-Cd-av6">
+                    <rect key="frame" x="113" y="92" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_auto.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzCenterClicked:" destination="-1" eventType="touchDown" id="WBf-4J-5Mf"/>
+                        <action selector="ptzCenterClickedUp:" destination="-1" eventType="touchUpInside" id="aq3-Hg-s5m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ruJ-Uj-ANO">
+                    <rect key="frame" x="200" y="92" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_right.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzRightClocked:" destination="-1" eventType="touchDown" id="Esm-Th-ldR"/>
+                        <action selector="ptzRightClockedUp:" destination="-1" eventType="touchUpInside" id="N5y-Ck-b75"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ePR-ox-5Yv">
+                    <rect key="frame" x="34" y="24" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_up_left.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzLeftUpClicked:" destination="-1" eventType="touchDown" id="I4t-j0-YPI"/>
+                        <action selector="ptzLeftUpClickedUp:" destination="-1" eventType="touchUpInside" id="R9X-iK-fJM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f3x-K3-iax">
+                    <rect key="frame" x="113" y="24" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_up.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzUpClicked:" destination="-1" eventType="touchDown" id="zju-Q1-60G"/>
+                        <action selector="ptzUpclickedUp:" destination="-1" eventType="touchUpInside" id="edT-70-h3e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="epS-0G-icq">
+                    <rect key="frame" x="200" y="24" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_up_right.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzRightUpClicked:" destination="-1" eventType="touchDown" id="ie1-9c-4zM"/>
+                        <action selector="ptzRightUpClickedUp:" destination="-1" eventType="touchUpInside" id="6nF-BL-q7s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="twg-gK-i2d">
+                    <rect key="frame" x="113" y="151" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_down.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzDownClicked:" destination="-1" eventType="touchDown" id="TkM-eM-t4P"/>
+                        <action selector="ptzDownClickedUp:" destination="-1" eventType="touchUpInside" id="qkk-1k-hKC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CD1-Rz-OL5">
+                    <rect key="frame" x="200" y="150" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_down_right.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzRightDownClicked:" destination="-1" eventType="touchDown" id="3hR-rq-Hcu"/>
+                        <action selector="ptzRightDownClickedUp:" destination="-1" eventType="touchUpInside" id="xmX-16-dIR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YnT-bA-Yji">
+                    <rect key="frame" x="34" y="150" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="arrow_down_left.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ptzLeftDownClicked:" destination="-1" eventType="touchDown" id="UPq-Cj-L03"/>
+                        <action selector="ptzLeftDownClickedUp:" destination="-1" eventType="touchUpInside" id="n9v-6f-fhK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VJU-2j-94Z">
+                    <rect key="frame" x="273" y="24" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="zoom_in.png"/>
+                    <connections>
+                        <action selector="ptzZoomInClicked:" destination="-1" eventType="touchDown" id="rot-tI-p7N"/>
+                        <action selector="ptzZoomInClickedUp:" destination="-1" eventType="touchUpInside" id="roW-nE-fPD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ngj-CY-y1i">
+                    <rect key="frame" x="273" y="92" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="zoom_out.png"/>
+                    <connections>
+                        <action selector="ptzZoomOutClicked:" destination="-1" eventType="touchDown" id="3M8-Vr-NeN"/>
+                        <action selector="ptzZoomOutClickedUp:" destination="-1" eventType="touchUpInside" id="IoU-Q9-ikH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247" y="48"/>
+        </view>
+        <view contentMode="scaleToFill" id="hIS-5z-Cvv">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="knm-5e-ESs">
+                    <rect key="frame" x="53" y="16" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="xunan"/>
+                    <connections>
+                        <action selector="ptzBeginCruiseClicked:" destination="-1" eventType="touchDown" id="a2d-MT-0vb"/>
+                        <action selector="ptzBeginCruiseClickedUp:" destination="-1" eventType="touchUpInside" id="4qV-hb-TbV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="55f-fL-97w">
+                    <rect key="frame" x="162" y="16" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="xunan1"/>
+                    <connections>
+                        <action selector="ptzEndCruiseClicked:" destination="-1" eventType="touchDown" id="6WW-FD-FlE"/>
+                        <action selector="ptzEndCruiseClickedUp:" destination="-1" eventType="touchUpInside" id="RuE-q1-j96"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Gb-5Q-6oA">
+                    <rect key="frame" x="269" y="16" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="capture.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="captureBtnClicked:" destination="-1" eventType="touchUpInside" id="oj4-Uk-6dl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="257" y="239"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_auto.png" width="280" height="280"/>
+        <image name="arrow_down.png" width="280" height="280"/>
+        <image name="arrow_down_left.png" width="280" height="279"/>
+        <image name="arrow_down_right.png" width="280" height="279"/>
+        <image name="arrow_left.png" width="280" height="280"/>
+        <image name="arrow_right.png" width="280" height="280"/>
+        <image name="arrow_up.png" width="280" height="280"/>
+        <image name="arrow_up_left.png" width="280" height="279"/>
+        <image name="arrow_up_right.png" width="280" height="279"/>
+        <image name="capture.png" width="280" height="280"/>
+        <image name="xunan" width="280" height="280"/>
+        <image name="xunan1" width="280" height="280"/>
+        <image name="zoom_in.png" width="280" height="279"/>
+        <image name="zoom_out.png" width="280" height="280"/>
+    </resources>
+</document>

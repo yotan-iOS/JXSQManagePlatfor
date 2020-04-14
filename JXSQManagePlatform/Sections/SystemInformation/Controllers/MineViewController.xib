@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineViewController">
+            <connections>
+                <outlet property="headerView" destination="i5M-Pr-FkT" id="pDx-Zr-4Bd"/>
+                <outlet property="myTableView" destination="fcN-v0-vGo" id="g1S-xt-Q0u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oxw-Cd-lBF">
+                    <rect key="frame" x="0.0" y="64" width="320" height="210"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="800" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-fh-Q7m">
+                    <rect key="frame" x="102" y="83" width="116" height="105"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ7-wU-VAb">
+                    <rect key="frame" x="0.0" y="284" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GMm-TH-r2E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oxw-Cd-lBF" secondAttribute="trailing" id="C5R-Lc-irR"/>
+                <constraint firstItem="HJ7-wU-VAb" firstAttribute="top" secondItem="oxw-Cd-lBF" secondAttribute="bottom" constant="10" id="IMf-iz-L2L"/>
+                <constraint firstItem="oxw-Cd-lBF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OyL-2u-Tvx"/>
+                <constraint firstItem="HJ7-wU-VAb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SBU-hi-QHH"/>
+                <constraint firstItem="HJ7-wU-VAb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mHR-Vd-Odv"/>
+                <constraint firstItem="oxw-Cd-lBF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="njc-Zg-78w"/>
+                <constraint firstAttribute="trailing" secondItem="HJ7-wU-VAb" secondAttribute="trailing" id="tzq-M6-Fje"/>
+            </constraints>
+            <point key="canvasLocation" x="-382" y="-8"/>
+        </view>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fcN-v0-vGo">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="359"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="LK0-64-12U"/>
+                <outlet property="delegate" destination="-1" id="PRf-fo-ixb"/>
+            </connections>
+            <point key="canvasLocation" x="-363" y="538"/>
+        </tableView>
+    </objects>
+    <resources>
+        <image name="login_logo.png" width="120" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PatrolRiverTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河道" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqL-vi-5Pa">
+                        <rect key="frame" x="10" y="13" width="58" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-11-01" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTz-Cx-ZVK">
+                        <rect key="frame" x="73" y="13" width="116" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-11-11" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rT-Iq-avF">
+                        <rect key="frame" x="194" y="13" width="116" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6rT-Iq-avF" secondAttribute="trailing" constant="10" id="3iN-Nv-KXe"/>
+                    <constraint firstItem="6rT-Iq-avF" firstAttribute="height" secondItem="DqL-vi-5Pa" secondAttribute="height" id="DMg-fa-fuM"/>
+                    <constraint firstItem="DqL-vi-5Pa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DUV-2q-gXH"/>
+                    <constraint firstItem="lTz-Cx-ZVK" firstAttribute="width" secondItem="DqL-vi-5Pa" secondAttribute="width" multiplier="2/1" id="FAB-g5-3eL"/>
+                    <constraint firstItem="DqL-vi-5Pa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Prx-WN-YPS"/>
+                    <constraint firstItem="6rT-Iq-avF" firstAttribute="centerY" secondItem="DqL-vi-5Pa" secondAttribute="centerY" id="Yjx-y0-1mN"/>
+                    <constraint firstItem="lTz-Cx-ZVK" firstAttribute="centerY" secondItem="DqL-vi-5Pa" secondAttribute="centerY" id="ZFl-28-zvM"/>
+                    <constraint firstItem="6rT-Iq-avF" firstAttribute="width" secondItem="DqL-vi-5Pa" secondAttribute="width" multiplier="2/1" id="jwC-GD-PeG"/>
+                    <constraint firstItem="lTz-Cx-ZVK" firstAttribute="leading" secondItem="DqL-vi-5Pa" secondAttribute="trailing" constant="5" id="lHI-Cj-1B1"/>
+                    <constraint firstItem="6rT-Iq-avF" firstAttribute="leading" secondItem="lTz-Cx-ZVK" secondAttribute="trailing" constant="5" id="uMO-RQ-nNd"/>
+                    <constraint firstItem="lTz-Cx-ZVK" firstAttribute="height" secondItem="DqL-vi-5Pa" secondAttribute="height" id="y0M-f2-jsY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endTimeLab" destination="6rT-Iq-avF" id="UvO-Kl-DA2"/>
+                <outlet property="riverNameLab" destination="DqL-vi-5Pa" id="QpB-pG-yFW"/>
+                <outlet property="startTimeLab" destination="lTz-Cx-ZVK" id="wKk-gm-GWA"/>
+            </connections>
+            <point key="canvasLocation" x="-128" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

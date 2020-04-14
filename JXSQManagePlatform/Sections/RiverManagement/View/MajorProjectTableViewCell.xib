@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MajorProjectTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0l-Ox-Dpo">
+                        <rect key="frame" x="2" y="10" width="69" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建筑类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-WW-9td">
+                        <rect key="frame" x="71" y="10.5" width="83.5" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djz-jB-jYl">
+                        <rect key="frame" x="154.5" y="10.5" width="83" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6D-s2-qsa">
+                        <rect key="frame" x="237.5" y="10.5" width="82.5" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nh4-WW-9td" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1Nd-Xc-vIe"/>
+                    <constraint firstItem="nh4-WW-9td" firstAttribute="width" secondItem="v0l-Ox-Dpo" secondAttribute="width" multiplier="1.2" id="1XB-F7-5S4"/>
+                    <constraint firstAttribute="trailing" secondItem="a6D-s2-qsa" secondAttribute="trailing" id="1lH-jk-3oS"/>
+                    <constraint firstItem="nh4-WW-9td" firstAttribute="height" secondItem="v0l-Ox-Dpo" secondAttribute="height" id="5Uy-rr-fpP"/>
+                    <constraint firstItem="djz-jB-jYl" firstAttribute="height" secondItem="v0l-Ox-Dpo" secondAttribute="height" id="EbE-kE-KTc"/>
+                    <constraint firstItem="v0l-Ox-Dpo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fd9-2f-Uzs"/>
+                    <constraint firstItem="a6D-s2-qsa" firstAttribute="width" secondItem="v0l-Ox-Dpo" secondAttribute="width" multiplier="1.2" id="G8x-au-zKA"/>
+                    <constraint firstItem="djz-jB-jYl" firstAttribute="width" secondItem="v0l-Ox-Dpo" secondAttribute="width" multiplier="1.2" id="M4A-bj-Qg7"/>
+                    <constraint firstItem="v0l-Ox-Dpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="OLz-Md-kgS"/>
+                    <constraint firstItem="a6D-s2-qsa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P0Q-aO-qAf"/>
+                    <constraint firstItem="nh4-WW-9td" firstAttribute="leading" secondItem="v0l-Ox-Dpo" secondAttribute="trailing" id="U99-8v-OHi"/>
+                    <constraint firstItem="v0l-Ox-Dpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dHM-xI-8Ze"/>
+                    <constraint firstItem="djz-jB-jYl" firstAttribute="leading" secondItem="nh4-WW-9td" secondAttribute="trailing" id="eBX-of-AIv"/>
+                    <constraint firstItem="a6D-s2-qsa" firstAttribute="height" secondItem="v0l-Ox-Dpo" secondAttribute="height" id="l0X-TT-gKi"/>
+                    <constraint firstItem="a6D-s2-qsa" firstAttribute="leading" secondItem="djz-jB-jYl" secondAttribute="trailing" id="lAu-ew-iru"/>
+                    <constraint firstAttribute="bottom" secondItem="v0l-Ox-Dpo" secondAttribute="bottom" constant="10" id="mRG-ek-tSN"/>
+                    <constraint firstItem="djz-jB-jYl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="u1G-rq-TSR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="monthLab" destination="a6D-s2-qsa" id="jBE-UF-arO"/>
+                <outlet property="planIDLab" destination="v0l-Ox-Dpo" id="k8t-WS-nPb"/>
+                <outlet property="planTypeLab" destination="nh4-WW-9td" id="PtS-kM-pc1"/>
+                <outlet property="yearLab" destination="djz-jB-jYl" id="Naj-Mk-QkP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,88 @@
+//
+//  PrefixHeader.pch
+//  LWIntelligenceOperations
+//
+//  Created by ghost on 2017/5/16.
+//  Copyright © 2017年 ghost. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define KDeviceH5s [UIScreen mainScreen].bounds.size.height / 568.0
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define WT [[UIScreen mainScreen] bounds].size.width
+#define HT [[UIScreen mainScreen] bounds].size.height
+#define WTALL [UIScreen mainScreen].applicationFrame.size.width
+#define HTALL [UIScreen mainScreen].applicationFrame.size.height
+#define F(string, args...)                  [NSString stringWithFormat:string, args]
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define KISIphoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
+//如果iOS的系统是11.0，会有这样一个宏定义“#define __IPHONE_11_0  110000”；如果系统版本低于11.0则没有这个宏定义
+#define kIphone6Width 375.0
+#define kFit(x) (WT*((x)/kIphone6Width))
+#define ISIPHONEX   (HT==(812))
+#define IphoneX_BH (ISIPHONEX ? 34:0)
+#define IphoneX_TH (ISIPHONEX ? 24:0)
+#define iPhoneX (HT == 812.0f || HT == 896.0f)
+#define NAVIHEIGHT (iPhoneX ? 88 : 64)
+
+#import "DefineMacro.h"
+#import "DefineRequest.h"
+#import "DefineTheme.h"
+#import "LYUserInfoManager.h"
+#import "CommonMethods.h"
+#import "UIViewController+swizzling.h"
+#import "NSArray+swiArray.h"
+#import "AppDelegate+AppService.h"
+#import "AppDelegate+ViewController.h"
+#import "SDCycleScrollView.h"
+#import "DataSource.h"
+#import "UIImageView+WebCache.h"
+#import "ThreeListViewController.h"
+#import "TwoListViewController.h"
+#import "HomeViewController.h"
+#import "JHUD.h"
+#import "RootTabViewController.h"
+#import "LWTNavigationViewController.h"
+#import <AFNetworking.h>
+#import "HomeViewCell.h"
+#import "HomeHeaderViewCell.h"
+//#import "MBProgressHUD+MJ.h"
+#import "GSHttpManager.h"
+#import <IQKeyboardManager.h>
+#import <MJRefresh.h>
+#import "RadioButton.h"
+#import "MKComposePhotosView.h"
+#import "MKMessagePhotoView.h"
+#import "WaterENViewController.h"
+#import "ZJBLStoreShopTypeAlert.h"
+
+#import "UploadImageManager.h"
+#import "UITextView+Extension.h"
+#import "WSDatePickerView.h"
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+#import "YZLocationManagerMacro.h"
+
+#import "CustomHUD.h"
+
+#import "YJProgressHUD.h"
+#import "AAGlobalMacro.h"
+#import "UIControl+UIControl_buttonCon.h"
+#import "SAMKeychain.h"
+#import "PlaceholderTextView.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+
+#endif
+#endif /* PrefixHeader_pch */
